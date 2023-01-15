@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1em;
+    color: var(--corClara);
+}
+
+:root{
+    --corClara:#CCC9DC;
+    --corEscura: #322F20;
+    --corDestaque:#37FF8B;
+    --corDestaque2: #F41549;
+}
+
+
+/*
+    -mox mobile = 576
+
+*/
+
+@media (max-width: 770px){
+
+    /* menu responsivo */
+
+
+
+     nav{
+        width: 100%;
+        padding: 20px 10px;
+        position: fixed;
+        top: 64px;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.041);
+        backdrop-filter: blur(10px);
+        z-index: 1 ;
+    }
+
+     nav ul{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+     header li:hover{
+        padding-left: 20px;
+        transition: all .5s;
+    }
+
+    .btn-menu{
+        display: block;
+        margin-right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #check:checked~nav{
+        left: 0;
+        transition: all .4s;
+    }
+
+    #check:checked~.btn-menu i{
+        color: var(--corDestaque);
+    }
+
+
+    #sobre header .midias, #projetos header .midias{
+        display: block;
+        translate: 15px 25px;
+        margin-top: auto;
+    }
+
+    #projetos header .midias-menu, #sobre header .midias-menu{ 
+        flex-direction: row;
+    }
+
+     nav .midias-menu li:hover{
+        padding-left: 0;
+        translate: 0px -10px;
+    }
+
+    .linha{
+    
+        display: block;
+    }
+
+    /* conteudo responsivo */
+
+    #sobre .container-geral{
+        width: 100%;
+        height: 100vh;
+        padding: 0 ;
+
+    } 
+
+    #sobre .container-direito{
+        width: 100%;
+        padding:  0 2%;
+        justify-content: center;
+    }
+
+    #sobre .texto-sobre{
+        font-size: .9em;
+        font-weight: lighter;
+        opacity: .8;
+        line-height: 20px;
+        margin: 0 auto;
+    }
+
+    #sobre .titulo-grande{
+        margin: 0 auto;
+    }
+
+    #sobre .container-esquerdo{
+        display: none;
+    }
+}
+
+/*====================================================================*/
+
+@media (max-width: 630px){
+    .img-card{
+        width: 100%;
+        height: 200px;
+    }
+
+    .container-modal img{
+        width: 95%;
+    }
+
+    #contato form{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(67deg, rgb(0, 0, 0) 30%, rgba(22,116,62,1) 75%);
+        justify-content: center;
+        gap: 20px;
+    }
+}
