@@ -422,8 +422,7 @@ header ul a:hover{
 
 #projetos .container-card-projetos{
     width: 100%;
-    height: calc100vh;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
