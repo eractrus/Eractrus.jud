@@ -460,7 +460,7 @@ header ul a:hover{
     width: 100%;
     height: 100vh;
     position: absolute;
-    top: 60px;
+    top: 70px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.668);
     display: none;
@@ -473,8 +473,8 @@ header ul a:hover{
 }
 
 .container-modal img{
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     margin: 20px auto;
 }
 
@@ -494,10 +494,9 @@ input[type="checkbox"]{
 }
 
 
-#img:checked~.container-modal, #img1:checked~.container-modal, #img2:checked~.container-modal{
+#img:checked~.container-modal, #img1:checked~.container-modal, #img2:checked~.container-modal, #img3:checked~.container-modal{
     display: flex;
     gap: 20px;
-    overflow: auto;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
