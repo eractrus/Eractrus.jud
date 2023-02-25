@@ -495,7 +495,7 @@ input[type="checkbox"]{
 }
 
 
-#img:checked~.container-modal, #img1:checked~.container-modal, #img2:checked~.container-modal, #img3:checked~.container-modal{
+#img:checked~.container-modal, #img1:checked~.container-modal, #img2:checked~.container-modal, #img3:checked~.container-modal, #img4:checked~.container-modal{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
